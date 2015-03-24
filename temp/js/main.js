@@ -13,7 +13,7 @@ $(document).ready(function() {
 		$('.menu-icon').children('i').toggleClass('click-fadeout');
 	});
 
-	$('#panelContent').on('swiperight',function(e,data){
+	$('#panelContent, #panelHero').on('swiperight',function(e,data){
 		$('#application').addClass('active-menu');
 		$('.menu-icon').children('i').toggleClass('click-fadein');
 		$('.menu-icon').children('i').toggleClass('click-fadeout');
