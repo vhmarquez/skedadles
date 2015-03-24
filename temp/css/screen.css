@@ -4477,11 +4477,13 @@ input[type="text"].main-search {
   font-weight: 300;
   color: rgba(255, 255, 255, 0.5);
   background: transparent;
+  padding-right: 25px;
 }
 @media screen and (min-width: 841px) {
   input[type="text"].main-search {
     font-size: 30px;
     line-height: 18px;
+    padding-right: 35px;
   }
 }
 input[type="text"].main-search:focus {
