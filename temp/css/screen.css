@@ -3421,6 +3421,10 @@ label {
   color: #70767f;
 }
 
+hr {
+  border-top: 1px solid #262728;
+}
+
 .status-add {
   position: relative;
   display: inline-block;
