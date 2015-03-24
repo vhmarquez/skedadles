@@ -1,0 +1,302 @@
+
+// app
+////////////////////////////////////////////////
+
+.application
+	position: relative
+	display: block
+	width: 100%
+	height: 100%
+	background: #fff
+
+	&.active-menu
+
+		.overlay
+			z-index: 3
+			position: fixed
+			display: block
+			top: 54px
+			left: 0
+			width: 100%
+			min-height: 100%
+			background: rgba(0,0,0, .3)
+			cursor: pointer
+
+		.menu-icon-wrap
+			background: darken(#2c3e50, 5%)
+
+		.panel-nav
+			+transform(translateY(0))
+
+			+mq(lap)
+				+transform(translateX(0))
+
+	+mq(desk)
+		&.active-menu
+			.overlay
+				display: none
+
+	// clearfix
+	&:before
+		content: ''
+		display: table
+
+	&:after
+		clear: both
+
+// panel top
+////////////////////////////////////////////////
+
+.top-table
+	position: relative
+	display: table
+
+.top-table-left,
+.top-table-middle,
+.top-table-right
+	position: relative
+	display: table-cell
+	vertical-align: middle
+
+.top-table-middle
+	width: 100%
+	overflow: hidden
+	text-align: center
+
+// menu icon
+//////////////////////
+
+.menu-icon-wrap
+	+grid-full
+	background: #2c3e50
+	+transition(all .4s ease-in-out)
+
+	&:hover,
+	&:focus
+		background: darken(#2c3e50, 5%)
+
+.menu-icon
+	position: relative
+	display: inline-block
+	cursor: pointer
+	padding: 12px 0
+	height: 54px
+	+font(20px, 20px)
+	text-align: center
+	color: #fff
+	+transition(all .4s ease-in-out)
+
+	&.left
+		padding-left: 12px
+		padding-right: 12px
+
+	&.right
+		padding-right: 12px
+		padding-left: 6px
+		line-height: 1.3
+
+	i
+		+font(24px, 24px)
+		line-height: 1.2
+
+		&.click-fadein
+			+animation(fadeIn .4s ease-in-out)
+			display: block
+			+transform(scale(1))
+
+		&.click-fadeout
+			+animation(fadeOut .4s ease-in-out)
+			display: none
+
+// settings icon
+
+.settings-icon
+	position: relative
+	display: inline-block
+	padding: 12px
+	cursor: pointer
+	text-align: center
+	color: #fff
+	background: #2c3e50
+	+transition(all .4s ease-in-out)
+
+	i
+		+font(24px, 24px)
+		line-height: 1.2
+
+	&:hover,
+	&:focus
+		background: darken(#2c3e50, 5%)
+
+// logo
+.app-logo
+	position: relative
+	display: inline-block
+	padding-left: 12px
+	padding-right: 12px
+	margin: 0
+	top: 2px
+	+font(20px, 20px)
+	line-height: 1
+	text-align: center
+	color: #fff
+	cursor: pointer
+	+jaapokki
+	font-weight: 300
+	text-transform: uppercase
+	+transition(all .4s ease-in-out)
+
+.fa-connectdevelop:before
+	position: relative
+	top: 1px
+
+
+// app dock
+////////////////////////////////////////////////
+
+.navigation-header
+	padding: 90px 0 0 0
+	overflow: hidden
+
+.navigation-header-cover
+	position: absolute
+	display: block
+	height: 100px
+	width: 100%
+	overflow: hidden
+	top: 54px
+	left: 0
+
+	> img
+		position: absolute
+		display: block
+		left: -50%
+		top: -50%
+		+transition(all .4s ease-in-out)
+
+.profile-switch
+	z-index: 2
+	position: relative
+	display: block
+	height: 58px
+	padding-top: 58px
+	overflow: hidden
+	+transition(height .4s ease-in-out)
+
+	&.active
+		height: auto
+
+.navigation-header-switch
+	position: relative
+	display: table
+	width: 100%
+	padding: 6px 0 6px 12px
+	background: #fff
+	border-bottom: 1px solid #e5e5e5
+	+box-shadow(inset -4px 0 0 #757575)
+	+transition(color box-shadow .4s ease-in-out)
+	cursor: pointer
+
+	&.active
+		position: absolute
+		display: table
+		top: 0
+		left: 0
+		padding-top: 0
+		background: transparent
+		border-bottom: 0
+		+box-shadow(inset 0 0 0)
+
+		.navigation-header-switch-right
+			display: table-cell
+
+		.user-tag-name,
+		.user-email
+			color: #fff
+			+text-shadow( 1px 1px 2px rgba(0,0,0, .5))
+
+	+hover
+		+box-shadow(inset -4px 0 0 #2980b9)
+
+		.user-tag-name,
+		.user-email
+			color: #2980b9
+
+		&.active
+			+box-shadow(inset 0 0 0)
+
+			.user-tag-name,
+			.user-email
+				color: #fff
+
+.navigation-header-switch-left,
+.navigation-header-switch-right
+	position: relative
+	display: table-cell
+	vertical-align: middle
+
+.navigation-header-switch-left
+	width: 100%
+
+.navigation-header-switch-right
+	display: none
+
+	i
+		display: block
+		padding: 12px
+		+font(24px, 24px)
+		line-height: 1.2
+		color: #fff
+		+text-shadow(1px 1px 2px rgba(0,0,0, .5))
+		cursor: pointer
+
+.navigation
+	position: absolute
+	display: block
+	min-height: calc(100% - 154px)
+	width: 100%
+	background: #fff
+	overflow-x: hidden
+	overflow-y: scroll
+	-webkit-overflow-scrolling: touch
+	white-space: nowrap
+	+transition(all .4s ease-in-out)
+
+.navigation-list-box
+	position: relative
+	display: block
+	width: 100%
+	padding: 6px 0
+	margin: 0
+	border-bottom: 1px solid #e5e5e5
+
+	&.footer
+		position: fixed
+		top: calc(100% - 164px)
+		left: 0
+		border-bottom: 0
+		border-top: 1px solid #e5e5e5
+
+.navigation-list-box-item
+	position: relative
+	display: block
+	list-style-type: none
+
+	> a
+		+font(14px, 28px)
+		font-weight: $weight-semibold
+		position: relative
+		display: block
+		padding: 12px 24px
+		color: #757575
+		text-decoration: none
+		+transition(all .4s ease-in-out)
+
+		i
+			float: left
+			+font(24px, 24px)
+			margin-right: 24px
+
+		+hover
+			color: #2980b9
+			background: rgba(0,0,0,.03)

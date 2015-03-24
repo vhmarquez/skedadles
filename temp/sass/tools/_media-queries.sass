@@ -1,0 +1,20 @@
+// //////////////////////////////////////////////
+// MEDIA QUERIES
+// //////////////////////////////////////////////
+
+// -- Add properties to element according to specified breakpoint
+
+=mq($breakpoint)
+
+	@if $breakpoint == lap
+		@media screen and (min-width: $lap-start)
+			@content
+
+	@else if $breakpoint == desk
+		@media screen and (min-width: $desk-start)
+			@content
+
+=mq-debug()
+
+	@media screen and (max-width: $lap-start - 1px)
+		@content

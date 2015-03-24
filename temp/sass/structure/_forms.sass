@@ -1,0 +1,237 @@
+// //////////////////////////////////////////////
+// FORMS
+// //////////////////////////////////////////////
+
+// labels
+// //////////////////////////////////////////////
+
+label
+	position: relative
+	display: block
+	margin-bottom: 15px
+	+font(16px, 18px)
+	color: $color-p
+
+// buttons
+// //////////////////////////////////////////////
+
+.status-add
+	position: relative
+	display: inline-block
+	padding: 5px
+	text-align: right
+	font-weight: 300
+	+font(14px, 18px)
+	color: rgba(#fff, .5)
+	+transition(none)
+	float: right
+
+	+hover
+		color: rgba(#fff, 1)
+
+.submit
+	position: relative
+	display: inline-block
+	border: 0
+	+font(14px, 18px)
+	font-weight: 300
+	background: $color-active
+	padding: 10px 15px
+	+border-radius(4px)
+	color: #fff
+	cursor: pointer
+	+transition(all .3s ease-in-out)
+
+	+hover
+		background: $light-green
+
+// fields
+// //////////////////////////////////////////////
+
+.field-wrap
+	position: relative
+	display: inline-block
+	width: 100%
+
+input[type="text"],
+input[type="password"]
+	vertical-align: top
+	height: 40px
+	width: 100%
+	position: relative
+	display: inline-block
+	padding: 0 3px
+	background: transparent
+	+border-radius(4px)
+
+	&:last-child
+		margin-bottom: 0
+
+	&:focus
+		color: $color-active !important
+		border: 1px solid $color-active !important
+		outline: 0
+
+
+
+// panel content input fields
+
+.panel-content
+	input[type="text"],
+	input[type="password"]
+		padding: 3px 3px 3px 36px
+		border: 1px solid $color-details
+		color: $color-p
+		margin-bottom: 15px
+		max-width: 360px
+		+font(16px, 30px)
+
+
+// change avatar
+// //////////////////////////////////////////////
+
+.change-avatar
+	position: relative
+	display: block
+	width: 100%
+	text-align: center
+	font-weight: 300
+	+font(12px, 30px)
+	color: $color-details
+	border: 1px solid $color-details
+	+border-radius(4px)
+
+// checkbox switches
+// //////////////////////////////////////////////
+
+.switch-wrap
+	position: relative
+	display: block
+	margin-bottom: 15px
+
+.switch
+	position: relative
+	z-index: 3
+	left: 11px
+	height: 28px
+	width: 60px
+	padding: 0
+	margin: 1px 0
+	+opacity(0)
+	cursor: pointer
+
+	+hover
+		right: 49px
+
+input.switch:checked + .switch-toggle
+	background: $light-green
+
+	&:after
+		+transform(translateX(25px))
+
+.switch-toggle
+	position: absolute
+	display: block
+	top: 0
+	width: 50px
+	height: 25px
+	margin: 0 10px
+	+border-radius(50em)
+	background: $grey
+	z-index: 1
+
+	&:after
+		position: absolute
+		display: block
+		height: 23px
+		width: 23px
+		+border-radius(50em)
+		background: #fff
+		z-index: 2
+		left: 1px
+		top: 1px
+		+transition(all .15s linear)
+		content: ''
+
+.switch-label
+	position: relative
+	vertical-align: top
+	color: $color-p
+
+	+mq(desk)
+		top: 3px
+
+// checkbox radio
+// //////////////////////////////////////////////
+
+.radio-wrap
+	position: relative
+	display: block
+	margin-bottom: 15px
+
+.radio
+	position: relative
+	z-index: 3
+	left: 11px
+	height: 30px
+	width: 30px
+	padding: 0
+	margin: 1px 0
+	+opacity(0)
+	cursor: pointer
+
+	+hover
+		right: 49px
+
+input.radio:checked + .radio-toggle
+	&:after
+		+opacity(1)
+
+.radio-toggle
+	position: absolute
+	display: block
+	top: 0
+	width: 23px
+	height: 23px
+	margin: 0 10px
+	+border-radius(50em)
+	background: #fff
+	border: 1px solid $color-borders
+	z-index: 1
+
+	&:after
+		position: absolute
+		display: block
+		+opacity(0)
+		height: 15px
+		width: 15px
+		+border-radius(50em)
+		background: $light-green
+		z-index: 2
+		left: 3px
+		top: 3px
+		+transition(opacity .15s ease-in-out)
+		content: ''
+
+.radio-label
+	position: relative
+	vertical-align: top
+	color: $color-p
+
+	+mq(desk)
+		top: 3px
+
+// textarea
+// //////////////////////////////////////////////
+
+textarea
+	position: relative
+	display: block
+	width: 100%
+	min-height: 90px
+	padding: 5px
+	margin-bottom: 15px
+	border: 0
+	+border-radius(2px)
+	+font(14px, 18px)
+	color: $color-p

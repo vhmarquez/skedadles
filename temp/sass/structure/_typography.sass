@@ -1,0 +1,67 @@
+// //////////////////////////////////////////////
+// TYPOGRAPHY
+// //////////////////////////////////////////////
+
+// -- Site typography
+
+// font family
+// //////////////////////////////////////////////
+
+@font-face
+	font-family: 'jaapokki'
+	src: url('../../assets/fonts/jaapokki/jaapokkisubtract-regular.eot?7mgvkq')
+	src: url('../../assets/fonts/jaapokki/jaapokkisubtract-regular.eot?#iefix7mgvkq') format('embedded-opentype'), url('../../assets/fonts/jaapokki/jaapokkisubtract-regular.woff?7mgvkq') format('woff'), url('../../assets/fonts/jaapokki/jaapokkisubtract-regular.ttf?7mgvkq') format('truetype'), url('../../assets/fonts/jaapokki/jaapokkisubtract-regular.svg?7mgvkq#icomoon') format('svg')
+	font-weight: normal
+	font-style: normal
+
+// fonts
+////////////////////////////////////////////////
+
+=material
+	font-family: 'icomoon'
+
+=open-sans
+	font-family: 'Open Sans', sans-serif
+
+=jaapokki
+	font-family: 'jaapokki', sans-serif
+
+
+// headings
+// //////////////////////////////////////////////
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+	margin-top: 0
+	margin-bottom: $bsu
+	font-weight: 400
+	color: $dark-blue
+
+.page-title
+	color: #3f454d
+	+font(30px, 30px)
+
+.section-title
+	color: $color-p
+	text-transform: uppercase
+	+font(13px, 30px)
+
+// paragraphs
+// //////////////////////////////////////////////
+
+p
+	margin: 0 0 $bsu 0
+	+font(15px, 25px)
+	color: $color-p
+
+a
+	color: $color-details
+	text-decoration: none
+	+transition(color .3s ease-in-out)
+
+	+hover
+		color: $color-active

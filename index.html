@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Skedadles</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+
+		<!-- DNS Prefetch -->
+		<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="architecture/css/boilerplate.min.css">
+		<link rel="stylesheet" href="architecture/css/screen.min.css">
+
+		<!-- Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+		<div class="application" id="application">
+			<div id="overlay" class="overlay"></div>
+
+			<!-- TOP PANEL -->
+			<div class="panel-top" id="panelTop">
+				<div class="top-table">
+					<div class="top-table-left">
+						<div class="menu-icon-wrap">
+							<span class="menu-icon left"><i class="icon-menu click-fadein"></i><i class="icon-arrow-back click-fadeout"></i></span>
+						</div>
+					</div>
+					<div class="top-table-middle">
+						<h1 class="app-logo">skedadles</h1>
+					</div>
+					<div class="top-table-right">
+						<span class="settings-icon"><i class="icon-cast"></i></span>
+					</div>
+				</div>
+			</div>
+
+			<!-- LEFT PANEL -->
+			<div class="panel-nav">
+				<header class="navigation-header">
+					<div class="navigation-header-cover">
+						<img src="assets/img/navigation-header2.jpeg" alt="Navigation Cover Image">
+					</div>
+					<div class="profile-switch" id="profileSwitch">
+						<div class="navigation-header-switch active">
+							<div class="navigation-header-switch-left">
+								<div class="user-tag">
+									<div class="user-tag-left">
+										<div class="user-pic">
+											<img src="assets/img/user-avatar--small.png" alt="User Avatar Small" class="user-avatar--small" width="40px" height="40px">
+										</div>
+									</div>
+									<div class="user-tag-right">
+										<span class="user-tag-name">Jon Coto</span>
+										<div class="user-email">jonny.coto@gmail.com</div>
+									</div>
+								</div>
+							</div>
+							<div class="navigation-header-switch-right">
+								<div class="switch-trigger">
+									<i class="icon-expand-more"></i>
+								</div>
+							</div>
+						</div>
+						<div class="navigation-header-switch">
+							<div class="navigation-header-switch-left">
+								<div class="user-tag">
+									<div class="user-tag-left">
+										<div class="user-pic">
+											<img src="assets/img/user-avatar--small.png" alt="User Avatar Small" class="user-avatar--small" width="40px" height="40px">
+										</div>
+									</div>
+									<div class="user-tag-right">
+										<span class="user-tag-name">Pancho Romero</span>
+										<div class="user-email">pancho.romero@gmail.com</div>
+									</div>
+								</div>
+							</div>
+							<div class="navigation-header-switch-right">
+								<div class="switch-trigger">
+									<i class="icon-expand-more"></i>
+								</div>
+							</div>
+						</div>
+						<div class="navigation-header-switch">
+							<div class="navigation-header-switch-left">
+								<div class="user-tag">
+									<div class="user-tag-left">
+										<div class="user-pic">
+											<img src="assets/img/user-avatar--small.png" alt="User Avatar Small" class="user-avatar--small" width="40px" height="40px">
+										</div>
+									</div>
+									<div class="user-tag-right">
+										<span class="user-tag-name">Lobo Loco</span>
+										<div class="user-email">lobo.loco@gmail.com</div>
+									</div>
+								</div>
+							</div>
+							<div class="navigation-header-switch-right">
+								<div class="switch-trigger">
+									<i class="icon-expand-more"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+				<nav class="navigation">
+					<ul class="navigation-list-box">
+						<li class="navigation-list-box-item">
+							<a href=""><i class="icon-favorite"></i>Favorites</a>
+						</li>
+						<li class="navigation-list-box-item">
+							<a href=""><i class="icon-movie"></i>Channels</a>
+						</li>
+						<li class="navigation-list-box-item">
+							<a href=""><i class="icon-search"></i>Browse</a>
+						</li>
+					</ul>
+					<ul class="navigation-list-box footer">
+						<li class="navigation-list-box-item">
+							<a href=""><i class="icon-settings"></i>Settings</a>
+						</li>
+						<li class="navigation-list-box-item">
+							<a href="" class="log-out"><i class="icon-exit-to-app"></i>Log Off</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- Panel: Hero -->
+			<div class="panel-hero" id="panelHero">
+				<div class="va-wrap hero">
+					<div class="va-item middle">
+						<div class="section-small padded-sides">
+							<div class="block padded user-search">
+								<input type="text" name="search" class="main-search" id="search">
+								<div class="typed-wrapper">
+									<span class="typed-search" id="typed"></span>
+								</div>
+								<a href="#" class="search-submit"><span class="icon-search"></span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- CONTENT -->
+			<div class="panel-content" id="panelContent">
+				<div class="section-small padded view-display" id="viewList">
+					<div class="block">
+						<div class="block-padding">
+							<div class="flag no-bottom">
+								<div class="flag-media">
+									<img src="assets/img/user-avatar--small.png" alt="User Avatar Small" class="user-avatar--small" width="40px" height="40px">
+								</div>
+								<div class="flag-content right">
+									<span class="user-name">HBO</span>
+									<span class="post-time">1m</span>
+									<a href="#" class="more"><span class="icon-chevron-right"></span></a>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta similique nemo illo adipisci ipsum, iste eos <a href="#">consequatur</a> perspiciatis. Maxime qui iure suscipit omnis quos nobis debitis ipsa modi, aliquid alias!</p>
+								</div>
+							</div>
+						</div>
+						<div class="block-padding">
+							<div class="flag no-bottom">
+								<div class="flag-media">
+									<img src="assets/img/user-avatar--small.png" alt="User Avatar Small" class="user-avatar--small" width="40px" height="40px">
+								</div>
+								<div class="flag-content right">
+									<span class="user-name">Animal Planet</span>
+									<span class="post-time">1m</span>
+									<a href="#" class="more"><span class="icon-chevron-right"></span></a>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni consequatur neque <a href="#">expedita laboriosam</a> aut accusantium ab? Repudiandae, deserunt, natus. Amet ea voluptatem natus optio fugit, voluptate neque dignissimos tempora ullam?</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta similique nemo illo adipisci ipsum, iste eos <a href="#">consequatur</a> perspiciatis. Maxime qui iure suscipit omnis quos nobis debitis ipsa modi, aliquid alias!</p>
+								</div>
+							</div>
+						</div>
+						<img src="assets/img/post-img.jpg" alt="Post Image" class="post-img" />
+						<div class="block-padding comment">
+							<div class="flag no-bottom">
+								<div class="flag-media">
+									<img src="assets/img/user-avatar--small.png" alt="User Avatar Small" class="user-avatar--small" width="40px" height="40px">
+								</div>
+								<div class="flag-content right">
+									<span class="user-name">Discovery</span>
+									<span class="post-time">1m</span>
+									<a href="#" class="more"><span class="icon-chevron-right"></span></a>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta similique nemo illo adipisci ipsum, <a href="#">iste eos consequatur perspiciatis</a>. Maxime qui iure suscipit omnis quos nobis debitis ipsa modi, aliquid alias!</p>
+								</div>
+							</div>
+						</div>
+						<div class="block-padding comment">
+							<div class="flag no-bottom">
+								<div class="flag-media">
+									<img src="assets/img/user-avatar--small.png" alt="User Avatar Small" class="user-avatar--small" width="40px" height="40px">
+								</div>
+								<div class="flag-content right">
+									<span class="user-name">Jessica Tuan</span>
+									<span class="post-time">1m</span>
+									<a href="#" class="more"><span class="icon-chevron-right"></span></a>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni consequatur neque expedita laboriosam aut accusantium ab? Repudiandae, deserunt, natus. Amet ea voluptatem natus optio fugit, voluptate neque dignissimos tempora ullam?</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta similique nemo illo adipisci ipsum, iste eos consequatur perspiciatis. Maxime qui iure suscipit omnis quos nobis debitis ipsa modi, aliquid alias!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="architecture/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+
+		<script src="architecture/js/main.min.js"></script>
+
+		<!-- Plugins -->
+		<script src="architecture/js/plugins/typed.min.js"></script>
+		<script src="architecture/js/plugins/Tocca.min.js"></script>
+
+		<script>
+			$(function(){
+
+				// Typed Effect
+				$('#typed').typed({
+					strings: ["Search channels..."],
+					typeSpeed: 50
+				});
+
+			});
+		</script>
+
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<script>
+			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+			e.src='//www.google-analytics.com/analytics.js';
+			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+			ga('create','UA-XXXXX-X');ga('send','pageview');
+		</script>
+	</body>
+</html>
