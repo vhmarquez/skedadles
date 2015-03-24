@@ -7,6 +7,18 @@ $(document).ready(function() {
 		$('.menu-icon').children('i').toggleClass('click-fadeout');
 	});
 
+	$('#overlay, #panelNav').on('swipeleft',function (e){
+		$('#application').removeClass('active-menu');
+		$('.menu-icon').children('i').toggleClass('click-fadein');
+		$('.menu-icon').children('i').toggleClass('click-fadeout');
+	});
+
+	$('#panelContent').on('swiperight',function(e,data){
+		$('#application').addClass('active-menu');
+		$('.menu-icon').children('i').toggleClass('click-fadein');
+		$('.menu-icon').children('i').toggleClass('click-fadeout');
+	});
+
 	// PROFILE TOGGLE
 	$('.navigation-header-switch').on('click', function(){
 

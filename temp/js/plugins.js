@@ -22,14 +22,3 @@
 }());
 
 // Place any jQuery/helper plugins in here.
-$('.overlay, .panel-left').on('swipeleft',function (e){
-	$('#application').removeClass('active-menu');
-	$('.menu-icon').children('i').toggleClass('click-fadein');
-	$('.menu-icon').children('i').toggleClass('click-fadeout');
-});
-
-$('#panelRight').on('swiperight',function(e,data){
-	$('#application').addClass('active-menu');
-	$('.menu-icon').children('i').toggleClass('click-fadein');
-	$('.menu-icon').children('i').toggleClass('click-fadeout');
-});
