@@ -329,7 +329,7 @@ h6 {
   margin-top: 0;
   margin-bottom: 24px;
   font-weight: 400;
-  color: #303d4f;
+  color: #fff;
 }
 
 .page-title {
@@ -353,7 +353,7 @@ p {
 }
 
 a {
-  color: #3498db;
+  color: #288ec3;
   text-decoration: none;
   -moz-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
@@ -362,6 +362,10 @@ a {
 }
 a:hover, a:focus {
   color: #303d4f;
+}
+
+li {
+  color: #70767f;
 }
 
 @font-face {
@@ -3443,10 +3447,10 @@ hr {
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background: #3498db;
+  background: #288ec3;
 }
 .submit:hover, .submit:focus {
-  background: #258cd1;
+  background: #247fae;
 }
 
 .field-wrap {
@@ -3475,14 +3479,14 @@ input[type="password"]:last-child {
 input[type="text"]:focus,
 input[type="password"]:focus {
   color: #303d4f !important;
-  border: 1px solid #303d4f !important;
+  border: 1px solid #12191f !important;
   outline: 0;
 }
 
 .panel-content input[type="text"],
 .panel-content input[type="password"] {
   padding: 3px 12px;
-  border: 1px solid #3498db;
+  border: 1px solid #303d4f;
   color: #70767f;
   margin-bottom: 15px;
   max-width: 360px;
@@ -3498,8 +3502,8 @@ input[type="password"]:focus {
   font-weight: 300;
   font-size: 12px;
   line-height: 30px;
-  color: #3498db;
-  border: 1px solid #3498db;
+  color: #70767f;
+  border: 1px solid #70767f;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
@@ -3528,7 +3532,7 @@ input[type="password"]:focus {
 }
 
 input.switch:checked + .switch-toggle {
-  background: #3498db;
+  background: #242f3a;
 }
 input.switch:checked + .switch-toggle:after {
   -moz-transform: translateX(25px);
@@ -3547,7 +3551,7 @@ input.switch:checked + .switch-toggle:after {
   -moz-border-radius: 50em;
   -webkit-border-radius: 50em;
   border-radius: 50em;
-  background: #dee1e5;
+  background: #12191f;
   z-index: 1;
 }
 .switch-toggle:after {
@@ -3631,7 +3635,7 @@ input.radio:checked + .radio-toggle:after {
   -moz-border-radius: 50em;
   -webkit-border-radius: 50em;
   border-radius: 50em;
-  background: #3498db;
+  background: #242f3a;
   z-index: 2;
   left: 3px;
   top: 3px;
@@ -3727,6 +3731,20 @@ body {
 
 .padded-end {
   padding: 24px 0;
+}
+
+.padded-lap {
+  padding: 24px 0;
+}
+@media screen and (min-width: 841px) {
+  .padded-lap {
+    padding: 24px;
+  }
+}
+.padded-lap .section-title,
+.padded-lap .page-title {
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .va-wrap {
@@ -3829,11 +3847,11 @@ body {
   position: relative;
   display: block;
   width: 100%;
-  padding: 25px 0 25px 0;
+  padding: 0 0 25px 0;
   -moz-animation: slide-in-subtle 0.4s linear 1;
   -webkit-animation: slide-in-subtle 0.4s linear 1;
   animation: slide-in-subtle 0.4s linear 1;
-  background: #303d4f;
+  background: #1c262f;
 }
 
 .section-small {
@@ -3995,7 +4013,7 @@ body {
 .top-table-middle {
   width: 100%;
   overflow: hidden;
-  text-align: center;
+  text-align: left;
 }
 
 .menu-icon-wrap {
@@ -4105,6 +4123,13 @@ body {
   -o-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+}
+.app-logo span {
+  color: #288ec3;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: lowercase;
+  font-style: italic;
 }
 
 .fa-connectdevelop:before {
@@ -4239,9 +4264,10 @@ body {
 .navigation {
   position: absolute;
   display: block;
-  min-height: calc(100% - 154px);
+  min-height: 100%;
+  padding-top: 54px;
   width: 100%;
-  background: #fff;
+  background: #242f3a;
   overflow-x: hidden;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
@@ -4258,14 +4284,15 @@ body {
   width: 100%;
   padding: 6px 0;
   margin: 0;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #1c262f;
 }
 .navigation-list-box.footer {
   position: absolute;
-  top: calc(100% - 164px);
+  top: calc(100% - 118px);
   left: 0;
   border-bottom: 0;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #1c262f;
+  background: #1c262f;
 }
 
 .navigation-list-box-item {
@@ -4280,7 +4307,7 @@ body {
   position: relative;
   display: block;
   padding: 12px 24px;
-  color: #757575;
+  color: #fff;
   text-decoration: none;
   -moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
@@ -4296,6 +4323,15 @@ body {
 .navigation-list-box-item > a:hover, .navigation-list-box-item > a:focus {
   color: #2980b9;
   background: rgba(0, 0, 0, 0.03);
+}
+.navigation-list-box-item.half {
+  width: 50%;
+  display: inline-block;
+  float: left;
+  text-align: center;
+}
+.navigation-list-box-item.header > a {
+  background-color: #1c262f;
 }
 
 .user-tag {
@@ -4365,8 +4401,8 @@ body {
   display: block;
   width: 100%;
   overflow: hidden;
-  background: #fff;
-  border: 1px solid #dee1e5;
+  background: #1c262f;
+  border: 1px solid #1c262f;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
@@ -4380,7 +4416,7 @@ body {
   -webkit-border-radius: 0;
   border-radius: 0;
   border: 0;
-  border-bottom: 1px solid #dee1e5;
+  border-bottom: 1px solid #1c262f;
   padding-bottom: 50px;
   margin-bottom: 50px;
 }
@@ -4390,10 +4426,10 @@ body {
   display: block;
   width: 100%;
   padding: 24px;
-  border-top: 1px solid #dee1e5;
+  border-top: 1px solid #12191f;
 }
 .block-padding.comment {
-  background: #f9fafb;
+  background: #12191f;
 }
 .block-padding:first-child {
   border-top: 0;
@@ -4405,6 +4441,7 @@ body {
   margin-bottom: 5px;
   font-size: 16px;
   line-height: 18px;
+  color: #fff;
 }
 
 .post-img {
@@ -4417,7 +4454,7 @@ body {
 .post-time {
   position: relative;
   display: block;
-  color: #3498db;
+  color: #288ec3;
   font-size: 13px;
   line-height: 18px;
 }
@@ -4480,7 +4517,7 @@ input[type="text"].main-search:focus {
   .search-submit {
     font-size: 30px;
     line-height: 18px;
-    color: #3498db;
+    color: #288ec3;
   }
 }
 
@@ -4683,6 +4720,7 @@ input[type="text"].main-search:focus {
   -o-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+  background: #242f3a;
 }
 .view-display.active {
   -moz-animation: slide-in-subtle 0.4s linear;

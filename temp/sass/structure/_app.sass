@@ -61,7 +61,7 @@
 .top-table-middle
 	width: 100%
 	overflow: hidden
-	text-align: center
+	text-align: left
 
 // menu icon
 //////////////////////
@@ -144,6 +144,12 @@
 	font-weight: 600
 	text-transform: uppercase
 	+transition(all .4s ease-in-out)
+
+	span
+		color: $color-details
+		+font(12px, 12px)
+		text-transform: lowercase
+		font-style: italic
 
 .fa-connectdevelop:before
 	position: relative
@@ -253,9 +259,10 @@
 .navigation
 	position: absolute
 	display: block
-	min-height: calc(100% - 154px)
+	min-height: 100%
+	padding-top: 54px
 	width: 100%
-	background: #fff
+	background: #242f3a
 	overflow-x: hidden
 	overflow-y: scroll
 	-webkit-overflow-scrolling: touch
@@ -268,14 +275,15 @@
 	width: 100%
 	padding: 6px 0
 	margin: 0
-	border-bottom: 1px solid #e5e5e5
+	border-bottom: 1px solid #1c262f
 
 	&.footer
 		position: absolute
-		top: calc(100% - 164px)
+		top: calc(100% - 118px)
 		left: 0
 		border-bottom: 0
-		border-top: 1px solid #e5e5e5
+		border-top: 1px solid #1c262f
+		background: #1c262f
 
 .navigation-list-box-item
 	position: relative
@@ -288,7 +296,7 @@
 		position: relative
 		display: block
 		padding: 12px 24px
-		color: #757575
+		color: #fff
 		text-decoration: none
 		+transition(all .4s ease-in-out)
 
@@ -300,3 +308,13 @@
 		+hover
 			color: #2980b9
 			background: rgba(0,0,0,.03)
+
+	&.half
+		width: 50%
+		display: inline-block
+		float: left
+		text-align: center
+
+	&.header
+		> a
+			background-color: #1c262f
