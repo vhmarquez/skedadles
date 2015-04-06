@@ -9,8 +9,8 @@
 	display: block
 	width: 100%
 	overflow: hidden
-	background: #1c262f
-	border: 1px solid #1c262f
+	background: $block-bg
+	border: 1px solid $block-border
 	+border-radius(4px)
 	margin-bottom: 25px
 
@@ -20,7 +20,7 @@
 	&.bottom-border
 		+border-radius(0)
 		border: 0
-		border-bottom: 1px solid #1c262f
+		border-bottom: 1px solid $block-bottom-border
 		padding-bottom: 50px
 		margin-bottom: 50px
 
@@ -29,10 +29,10 @@
 	display: block
 	width: 100%
 	padding: $bsu
-	border-top: 1px solid darken(#1c262f, 5%)
+	border-top: 1px solid darken($block-border-top, 5%)
 
 	&.comment
-		background: darken(#1c262f, 5%)
+		background: darken($block-comment-bg, 5%)
 
 	&:first-child
 		border-top: 0
@@ -42,7 +42,7 @@
 	display: block
 	margin-bottom: 5px
 	+font(16px, 18px)
-	color: #fff
+	color: $block-user-name
 
 .post-img
 	position: relative
@@ -53,7 +53,7 @@
 .post-time
 	position: relative
 	display: block
-	color: $color-details
+	color: $block-post-time
 	+font(13px, 18px)
 
 .more

@@ -13,7 +13,7 @@ label
 	color: $color-p
 
 hr
-	border-top: 1px solid $dark-grey
+	border-top: 1px solid $hr
 
 // buttons
 // //////////////////////////////////////////////
@@ -24,16 +24,15 @@ hr
 	border: 0
 	+font(14px, 18px)
 	font-weight: 300
-	background: $color-active
 	padding: 10px 15px
 	+border-radius(4px)
-	color: #fff
+	color: $white
 	cursor: pointer
 	+transition(all .3s ease-in-out)
-	background: $color-details
+	background: $submit-bg
 
 	+hover
-		background: darken($color-details, 5%)
+		background: darken($submit-bg-hover, 5%)
 
 // fields
 // //////////////////////////////////////////////
@@ -58,8 +57,8 @@ input[type="password"]
 		margin-bottom: 0
 
 	&:focus
-		color: $color-active !important
-		border: 1px solid darken(#1c262f, 5%) !important
+		color: $form-field-focus-color !important
+		border: 1px solid darken($form-field-border-focus, 5%) !important
 		outline: 0
 
 
@@ -69,27 +68,12 @@ input[type="password"]
 .panel-content
 	input[type="text"],
 	input[type="password"]
-		padding: 3px 12px
-		border: 1px solid $color-active
-		color: $color-p
-		margin-bottom: 15px
 		max-width: 360px
+		padding: 3px 12px
+		margin-bottom: 15px
+		border: 1px solid $form-field-border
 		+font(16px, 30px)
-
-
-// change avatar
-// //////////////////////////////////////////////
-
-.change-avatar
-	position: relative
-	display: block
-	width: 100%
-	text-align: center
-	font-weight: 300
-	+font(12px, 30px)
-	color: $color-p
-	border: 1px solid $color-p
-	+border-radius(4px)
+		color: $form-field-color
 
 // checkbox switches
 // //////////////////////////////////////////////
@@ -114,7 +98,7 @@ input[type="password"]
 		right: 49px
 
 input.switch:checked + .switch-toggle
-	background: #242f3a
+	background: $switch-toggle-bg-active
 
 	&:after
 		+transform(translateX(25px))
@@ -125,9 +109,8 @@ input.switch:checked + .switch-toggle
 	top: 0
 	width: 50px
 	height: 25px
-	margin: 0 10px
 	+border-radius(50em)
-	background: darken(#1c262f, 5%)
+	background: darken($switch-toggle-bg, 5%)
 	z-index: 1
 
 	&:after
@@ -136,7 +119,7 @@ input.switch:checked + .switch-toggle
 		height: 23px
 		width: 23px
 		+border-radius(50em)
-		background: #fff
+		background: $switch-toggle
 		z-index: 2
 		left: 1px
 		top: 1px
@@ -146,7 +129,7 @@ input.switch:checked + .switch-toggle
 .switch-label
 	position: relative
 	vertical-align: top
-	color: $color-p
+	color: $switch-label
 
 	+mq(desk)
 		top: 3px
@@ -162,9 +145,8 @@ input.switch:checked + .switch-toggle
 .radio
 	position: relative
 	z-index: 3
-	left: 11px
-	height: 30px
-	width: 30px
+	height: 22px
+	width: 22px
 	padding: 0
 	margin: 1px 0
 	+opacity(0)
@@ -185,8 +167,8 @@ input.radio:checked + .radio-toggle
 	height: 23px
 	margin: 0 10px
 	+border-radius(50em)
-	background: #fff
-	border: 1px solid $color-borders
+	background: $radio-bg
+	border: 1px solid $radio-border
 	z-index: 1
 
 	&:after
@@ -196,7 +178,7 @@ input.radio:checked + .radio-toggle
 		height: 15px
 		width: 15px
 		+border-radius(50em)
-		background: #242f3a
+		background: $radio-toggle
 		z-index: 2
 		left: 3px
 		top: 3px
@@ -206,7 +188,7 @@ input.radio:checked + .radio-toggle
 .radio-label
 	position: relative
 	vertical-align: top
-	color: $color-p
+	color: $radio-label
 
 	+mq(desk)
 		top: 3px
@@ -224,4 +206,18 @@ textarea
 	border: 0
 	+border-radius(2px)
 	+font(14px, 18px)
-	color: $color-p
+	color: $textarea-color
+
+// change user avatar
+////////////////////////////////////////////////
+
+.change-avatar
+	display: block
+	width: 100%
+	text-align: center
+	font-weight: 300
+	font-size: 12px
+	line-height: 30px
+	color: $change-avatar-color
+	border: 1px solid $change-avatar-border
+	border-radius: 4px
