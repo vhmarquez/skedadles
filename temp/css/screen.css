@@ -4298,11 +4298,15 @@ body {
 }
 
 .nav-bar {
-  padding-bottom: 12px;
+  padding-bottom: 6px;
   margin-bottom: 12px;
   border-bottom: 1px solid #288ec3;
 }
 
+.nav-bar-left,
+.nav-bar-right {
+  padding: 0 6px;
+}
 .nav-bar-left .icon-chevron-left,
 .nav-bar-left .icon-search,
 .nav-bar-right .icon-chevron-left,
@@ -4310,14 +4314,6 @@ body {
   font-size: 36px;
   line-height: 36px;
   color: #fff;
-}
-
-.nav-bar-left {
-  padding-right: 12px;
-}
-
-.nav-bar-right {
-  padding-left: 12px;
 }
 
 .nav-bar-mid {
