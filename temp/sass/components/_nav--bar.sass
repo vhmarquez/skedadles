@@ -4,3 +4,32 @@
 
 // -- Structure for the chanels nav bar
 
+.nav-bar
+	@extend .flag
+	padding-bottom: 12px
+	margin-bottom: 12px
+	border-bottom: 1px solid $light-blue
+
+.nav-bar-left,
+.nav-bar-right
+	@extend .flag-media
+
+	.icon-chevron-left,
+	.icon-search
+		+font(36px, 36px)
+		color: $white
+
+.nav-bar-left
+	padding-right: 12px
+
+.nav-bar-right
+	padding-left: 12px
+
+.nav-bar-mid
+	@extend .flag-content
+	padding: 0 12px
+	vertical-align: middle
+	color: $white
+	border-left: 1px solid $light-blue
+	border-right: 1px solid $light-blue
+

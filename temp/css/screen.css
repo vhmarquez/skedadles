@@ -3731,15 +3731,20 @@ body {
 .padded-lap {
   padding: 24px 0;
 }
-@media screen and (min-width: 841px) {
-  .padded-lap {
-    padding: 24px;
-  }
-}
 .padded-lap .section-title,
 .padded-lap .page-title {
   padding-left: 24px;
   padding-right: 24px;
+}
+@media screen and (min-width: 841px) {
+  .padded-lap {
+    padding: 24px;
+  }
+  .padded-lap .section-title,
+  .padded-lap .page-title {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .panel-top {
@@ -4100,6 +4105,7 @@ body {
   width: 100%;
   height: auto;
   max-height: 180px;
+  background: #292929;
 }
 @media screen and (min-width: 841px) {
   .hero-video {
@@ -4112,8 +4118,8 @@ body {
   display: block;
   width: 100%;
   overflow: hidden;
-  background: #1c262f;
-  border: 1px solid #1c262f;
+  background: #242f3a;
+  border: 1px solid #242f3a;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
@@ -4146,7 +4152,7 @@ body {
   border-top: 0;
 }
 
-.user-name {
+.post-title {
   position: relative;
   display: block;
   margin-bottom: 5px;
@@ -4182,33 +4188,49 @@ body {
   line-height: 36px;
 }
 
-.flag {
+.channel-listing .post-title {
+  font-size: 24px;
+  line-height: 26px;
+}
+.channel-listing .post-time {
+  color: #fff;
+}
+.channel-listing .icon-chevron-right {
+  color: #fff;
+}
+.channel-listing .icon-chevron-right:hover, .channel-listing .icon-chevron-right:focus {
+  color: #288ec3;
+}
+
+.flag, .nav-bar {
   position: relative;
   display: table;
   width: 100%;
   margin-bottom: 15px;
 }
-.flag.no-bottom {
+.flag.no-bottom, .no-bottom.nav-bar {
   margin-bottom: 0;
 }
 
-.flag-media,
-.flag-content {
+.flag-media, .nav-bar-left,
+.nav-bar-right,
+.flag-content,
+.nav-bar-mid {
   position: relative;
   display: table-cell;
   vertical-align: top;
 }
 
-.flag-content {
+.flag-content, .nav-bar-mid {
   width: 100%;
 }
-.flag-content.right {
+.flag-content.right, .right.nav-bar-mid {
   padding-left: 15px;
 }
-.flag-content.right-double {
+.flag-content.right-double, .right-double.nav-bar-mid {
   padding-left: 30px;
 }
-.flag-content.left {
+.flag-content.left, .left.nav-bar-mid {
   padding-right: 15px;
 }
 
@@ -4273,4 +4295,35 @@ body {
   -moz-animation: slide-in-subtle 0.4s linear;
   -webkit-animation: slide-in-subtle 0.4s linear;
   animation: slide-in-subtle 0.4s linear;
+}
+
+.nav-bar {
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #288ec3;
+}
+
+.nav-bar-left .icon-chevron-left,
+.nav-bar-left .icon-search,
+.nav-bar-right .icon-chevron-left,
+.nav-bar-right .icon-search {
+  font-size: 36px;
+  line-height: 36px;
+  color: #fff;
+}
+
+.nav-bar-left {
+  padding-right: 12px;
+}
+
+.nav-bar-right {
+  padding-left: 12px;
+}
+
+.nav-bar-mid {
+  padding: 0 12px;
+  vertical-align: middle;
+  color: #fff;
+  border-left: 1px solid #288ec3;
+  border-right: 1px solid #288ec3;
 }

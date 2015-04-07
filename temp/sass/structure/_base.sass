@@ -48,13 +48,18 @@ body
 .padded-lap
 	padding: $bsu 0
 
-	+mq(lap)
-		padding: $bsu
-
 	.section-title,
 	.page-title
 		padding-left: $bsu
 		padding-right: $bsu
+
+	+mq(lap)
+		padding: $bsu
+
+		.section-title,
+		.page-title
+			padding-left: 0
+			padding-right: 0
 
 // -- Hierarchy of structural classes
 // //////////////////////////////////////////////
