@@ -4099,6 +4099,12 @@ body {
 .hero-video {
   width: 100%;
   height: auto;
+  max-height: 180px;
+}
+@media screen and (min-width: 841px) {
+  .hero-video {
+    max-height: auto;
+  }
 }
 
 .block {
