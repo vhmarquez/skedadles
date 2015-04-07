@@ -4103,7 +4103,7 @@ body {
 }
 @media screen and (min-width: 841px) {
   .hero-video {
-    max-height: auto;
+    max-height: 320px;
   }
 }
 
