@@ -1,14 +1,17 @@
 # humanstxt.org/
 # The humans responsible & technology colophon
+# The front-end structure and design by Victor Marquez, 
+# derivative work based off of this structure is not permitted for use on other projects.
 
 # TEAM
 
     <name> -- <role> -- <twitter>
-    victor marquez -- developer -- @victormarquez
+    victor marquez -- developer/designer -- @victormarquez
 
 # THANKS
 
     <name>
+    Jon Coto
 
 # TECHNOLOGY COLOPHON
 
